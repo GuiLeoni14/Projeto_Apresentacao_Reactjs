@@ -10,7 +10,7 @@ export default createGlobalStyle`
         outline: none;
         list-style: none;
         text-decoration: none;
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Inter', sans-serif;
     }
     body{
         color: ${(props) => props.theme.colors.title};
