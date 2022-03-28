@@ -7,6 +7,7 @@ export const Container = styled.div`
     justify-content: center;
     flex-direction: column;
     background-color: ${({ theme }) => theme.colors.background};
+    padding-bottom: 15rem;
 `;
 export const Top = styled.div`
     width: 100%;
@@ -27,6 +28,11 @@ export const Top = styled.div`
         text-align: center;
         font-size: 2rem;
         max-width: 80rem;
+        font-weight: bold;
+        background: linear-gradient(90deg, #f15b4a 0%, rgba(247, 255, 0, 1) 20%, #f15b4a 91%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 `;
 export const Bottom = styled.div`
@@ -75,6 +81,7 @@ export const Background = styled.div`
         width: 5rem;
         height: 5rem;
         border-radius: 50%;
+        cursor: pointer;
     }
     div:nth-child(1) {
         background-color: red;
@@ -97,6 +104,7 @@ export const Color = styled.div`
         width: 5rem;
         height: 5rem;
         border-radius: 20%;
+        cursor: pointer;
     }
     div:nth-child(1) {
         background-color: black;

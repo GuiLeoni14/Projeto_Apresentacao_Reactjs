@@ -23,4 +23,7 @@ export default createGlobalStyle`
     section{
         width: 100%;
     }
+    button {
+        cursor: pointer;
+    }
 `;

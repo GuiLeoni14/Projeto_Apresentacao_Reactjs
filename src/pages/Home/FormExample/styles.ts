@@ -6,10 +6,18 @@ export const Container = styled.div`
     > div {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
+    }
+    form {
+        margin-top: -10rem;
     }
 `;
 export const UserInfo = styled.div`
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     > h2 {
         font-size: 3rem;
         font-weight: bold;
@@ -18,5 +26,14 @@ export const UserInfo = styled.div`
         > strong {
             color: ${({ theme }) => theme.colors.primary};
         }
+    }
+    button {
+        margin-top: 2rem;
+        font-size: 2.5rem;
+        line-height: 4.5rem;
+        padding: 0rem 4rem;
+        border-radius: 2rem;
+        background-color: ${({ theme }) => theme.colors.second};
+        color: ${({ theme }) => theme.colors.primary};
     }
 `;

@@ -5,7 +5,7 @@ import InputLabel from '../../../components/InputLabel';
 import Loading from '../../../components/Loading';
 import { MainContainer } from '../../../styles/container';
 import { TypeUser } from '../../../types/User';
-
+import { motion } from 'framer-motion';
 import { Container, UserInfo } from './styles';
 
 function FormExample() {
@@ -20,7 +20,21 @@ function FormExample() {
                             <h2>
                                 Olá <strong>{user.name}</strong>, seja bem-vindo ao sistema
                             </h2>
-                            <button>Sair</button>
+                            <motion.button
+                                animate={{
+                                    scale: [1, 1.2, 1],
+                                }}
+                                transition={{
+                                    duration: 1,
+                                    ease: 'linear',
+                                    times: [0, 0.5, 1],
+                                    repeat: Infinity,
+                                    repeatDelay: 0,
+                                }}
+                                onClick={() => setUser({ name: '', password: '' })}
+                            >
+                                Sair
+                            </motion.button>
                         </>
                     ) : (
                         <h2>
