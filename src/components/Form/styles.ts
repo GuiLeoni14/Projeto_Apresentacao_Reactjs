@@ -11,6 +11,7 @@ export const Container = styled.form`
     border-radius: 1rem;
     padding: 5rem;
     position: relative;
+    box-shadow: 0rem 0rem 1rem #000;
     > h2 {
         font-size: 3rem;
         font-weight: bold;

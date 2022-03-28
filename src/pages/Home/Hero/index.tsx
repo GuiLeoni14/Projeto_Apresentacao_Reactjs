@@ -16,7 +16,6 @@ function Hero() {
     const constraintsRef = useRef(null);
     return (
         <Container>
-            <Stars />
             <MainContainer>
                 <Top>
                     <h1>

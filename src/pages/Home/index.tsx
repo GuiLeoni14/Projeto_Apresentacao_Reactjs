@@ -5,6 +5,7 @@ import { Animate } from './styles';
 import Hero from './Hero';
 import { MainContainer } from '../../styles/container';
 import FormExample from './FormExample';
+import Last from './Last';
 function Home() {
     const { scrollYProgress } = useViewportScroll();
     const scale = useTransform(scrollYProgress, [0, 0.75], [0, 1]);
@@ -32,6 +33,7 @@ function Home() {
             /> */}
             <Hero />
             <FormExample />
+            <Last />
         </Container>
     );
 }
