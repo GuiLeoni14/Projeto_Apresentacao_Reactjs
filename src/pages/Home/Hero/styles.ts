@@ -6,7 +6,7 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: ${({ theme: { colors } }) => colors.background};
+    background-color: ${({ theme }) => theme.colors.background};
 `;
 export const Top = styled.div`
     width: 100%;
@@ -40,24 +40,31 @@ export const Left = styled.div`
     width: 100%;
     display: flex;
     flex-direction: column;
-    > div:first-child {
-        width: 100%;
-        opacity: 0.2;
-        background: transparent;
-        width: 30rem;
-        height: 20rem;
-        position: relative;
-    }
+    align-items: center;
+    justify-content: center;
     svg {
-        width: 25rem;
-        position: absolute;
+        width: 20rem;
     }
 `;
 export const Right = styled.div`
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    > img {
+        width: 100%;
+        max-width: 35rem;
+        border-radius: 3rem;
+    }
 `;
 
-export const Colors = styled.div``;
+export const Colors = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+`;
 
 export const Background = styled.div`
     display: flex;
@@ -79,7 +86,9 @@ export const Background = styled.div`
         background-color: blue;
     }
 `;
+
 export const Color = styled.div`
+    margin-top: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -97,5 +106,20 @@ export const Color = styled.div`
     }
     div:nth-child(3) {
         background-color: gray;
+    }
+`;
+
+export const Description = styled.div`
+    > h3 {
+        font-size: 3rem;
+        font-weight: bold;
+        text-align: center;
+        > strong {
+            color: ${({ theme }) => theme.colors.primary};
+        }
+    }
+    p {
+        font-size: 1.4rem;
+        text-align: justify;
     }
 `;

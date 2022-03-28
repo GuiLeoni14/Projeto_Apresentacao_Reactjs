@@ -10,6 +10,7 @@ export default createGlobalStyle`
         outline: none;
         list-style: none;
         text-decoration: none;
+        color: ${({ theme: { colors } }) => colors.gray};
         font-family: 'Inter', sans-serif;
     }
     body{
