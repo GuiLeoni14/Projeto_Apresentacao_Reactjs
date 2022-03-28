@@ -8,7 +8,7 @@ export default function MyRoutes({ toggleTheme }: TypeRoutes) {
         <Router>
             <GlobalStyle />
             <Routes>
-                <Route path="/" element={<Home />} />
+                <Route path="/" element={<Home toggleTheme={toggleTheme} />} />
             </Routes>
         </Router>
     );

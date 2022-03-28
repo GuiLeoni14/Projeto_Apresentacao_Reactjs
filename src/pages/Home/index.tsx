@@ -6,12 +6,11 @@ import Hero from './Hero';
 import { MainContainer } from '../../styles/container';
 import FormExample from './FormExample';
 import Last from './Last';
-function Home() {
+function Home({ toggleTheme }: { toggleTheme(): void }) {
     const { scrollYProgress } = useViewportScroll();
     const scale = useTransform(scrollYProgress, [0, 0.75], [0, 1]);
     return (
         <Container>
-            <h1>Home</h1>
             {/* <Animate
                 animate={{
                     rotate: [0, 0, 270, 270, 0],
@@ -33,7 +32,7 @@ function Home() {
             /> */}
             <Hero />
             <FormExample />
-            <Last />
+            <Last toggleTheme={toggleTheme} />
         </Container>
     );
 }

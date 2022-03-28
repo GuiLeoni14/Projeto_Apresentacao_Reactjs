@@ -25,5 +25,12 @@ export default createGlobalStyle`
     }
     button {
         cursor: pointer;
+        transition: opacity .3s;
+    }
+    button:hover {
+        opacity: 0.4;
+    }
+    * {
+        transition: background .6s, color .6s;
     }
 `;

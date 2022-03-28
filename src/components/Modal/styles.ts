@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import * as Dialog from '@radix-ui/react-dialog';
+import { motion } from 'framer-motion';
 export const Container = styled(Dialog.Root)``;
 export const Button = styled(Dialog.Trigger)`
     cursor: pointer;
@@ -13,8 +14,9 @@ export const Button = styled(Dialog.Trigger)`
     padding: 0rem 1.5rem;
     border-radius: 1rem;
     font-size: 1.8rem;
+    margin: 4rem;
     color: ${({ theme }) => theme.colors.second};
-    background-color: ${({ theme }) => theme.colors.primary};
+    background-color: ${({ theme }) => theme.colors.background};
     & > img {
         margin-right: 0.8rem;
     }
@@ -49,4 +51,22 @@ export const Content = styled(Dialog.Content)`
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: ${({ theme }) => theme.colors.background};
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 40rem;
+    padding: 5rem 0rem;
+    justify-content: center;
+    box-shadow: 0rem 0rem 1rem #000;
+`;
+
+export const IconContent = styled(motion.div)`
+    margin: 2rem;
+    > img {
+        cursor: pointer;
+        width: 10rem;
+        height: 10rem;
+    }
 `;
