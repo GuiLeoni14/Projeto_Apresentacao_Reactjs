@@ -14,7 +14,7 @@ function FormExample() {
         <Container>
             <MainContainer>
                 <Form setUser={setUser} />
-                <UserInfo>
+                <UserInfo data-aos="flip-left">
                     {user.name ? (
                         <>
                             <h2>

@@ -15,7 +15,7 @@ function Last({ toggleTheme }: { toggleTheme(): void }) {
                     Alguns <strong>exemplos</strong>
                 </h1>
                 <Slide />
-                <Modal toggleTheme={toggleTheme} />
+                <Modal toggleTheme={toggleTheme} data-aos="fade-down" />
                 <Languages>
                     <motion.img src={icon_js} />
                     <span>+</span>

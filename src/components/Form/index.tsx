@@ -20,7 +20,7 @@ function Form({ setUser }: { setUser(user: TypeUser): void }) {
         }, 2000);
     };
     return (
-        <Container onSubmit={handleSubmit}>
+        <Container onSubmit={handleSubmit} data-aos="flip-right">
             <h2>
                 Exemplo de envio de <strong>formulário</strong>
             </h2>

@@ -17,9 +17,9 @@ function Hero() {
     return (
         <Container>
             <MainContainer>
-                <Top>
+                <Top data-aos="fade-down">
                     <h1>
-                        De onde e porque <strong>surgiu o JavaScript?</strong>
+                        Porque usar <strong>o JavaScript?</strong>
                     </h1>
                     <p>
                         JavaScript é uma linguagem de programação universal, multiplataforma e segue sendo a linguagem
@@ -27,7 +27,7 @@ function Hero() {
                     </p>
                 </Top>
                 <Bottom>
-                    <Left>
+                    <Left data-aos="fade-right">
                         <motion.div
                             animate={{
                                 rotate: [0, 90, 270, 360, 0],
@@ -88,7 +88,7 @@ function Hero() {
                             </Color>
                         </Colors>
                     </Left>
-                    <Right>
+                    <Right data-aos="fade-left">
                         <img src={criador} />
                         <Description>
                             <h3>

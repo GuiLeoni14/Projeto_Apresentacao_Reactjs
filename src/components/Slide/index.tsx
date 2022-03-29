@@ -52,6 +52,13 @@ function Slide() {
                 <SwiperSlide>
                     <SlideContent>
                         <TextSlide>
+                            <img src={getImageUrl('5.jpg')} alt="" />
+                        </TextSlide>
+                    </SlideContent>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <SlideContent>
+                        <TextSlide>
                             <img src={getImageUrl('6.png')} alt="" />
                         </TextSlide>
                     </SlideContent>
