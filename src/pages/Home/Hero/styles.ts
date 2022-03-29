@@ -29,7 +29,7 @@ export const Top = styled.div`
         font-size: 2rem;
         max-width: 80rem;
         font-weight: bold;
-        background: linear-gradient(90deg, #f15b4a 0%, rgba(247, 255, 0, 1) 20%, #f15b4a 91%);
+        background: #f15b4a;
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
