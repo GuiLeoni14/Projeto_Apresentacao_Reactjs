@@ -11,6 +11,7 @@ function InputLabel({ label, name, type, handleChange }: TypeInputLabel) {
             InputLabelProps={{ style: { fontSize: 16 } }}
             onChange={handleChange}
             required
+            autoComplete="off"
         />
     );
 }
