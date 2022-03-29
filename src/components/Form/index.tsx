@@ -24,7 +24,7 @@ function Form({ setUser }: { setUser(user: TypeUser): void }) {
             <h2>
                 Exemplo de envio de <strong>formulário</strong>
             </h2>
-            <InputLabel name="email" type="text" label="Digite seu email" handleChange={handleOnChange} />
+            <InputLabel name="name" type="email" label="Digite seu email" handleChange={handleOnChange} />
             <InputLabel name="senha" type="password" label="Digite sua senha" handleChange={handleOnChange} />
             <button type="submit" disabled={isLoading}>
                 Enviar
