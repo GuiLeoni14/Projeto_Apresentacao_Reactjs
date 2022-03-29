@@ -5,7 +5,6 @@ import { motion, useTransform, useViewportScroll } from 'framer-motion';
 import { Container, Top, Bottom, Colors, Left, Right, Background, Color, Description } from './styles';
 import criador from '../../../assets/img/criador.jpg';
 import { MainContainer } from '../../../styles/container';
-import Stars from '../../../components/Stars';
 function Hero() {
     const [stateSvg, setStateSvg] = useState({
         animate: false,
